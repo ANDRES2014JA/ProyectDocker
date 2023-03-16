@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloIndex.css">
+    <link rel="shortcut icon" href="undraw_male_avatar_323b.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">  Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="registro.html">Registrar (form)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="listar.php">Contactos</a>
+                </li>
+            </div>
+          </nav>
+    </header>
+
+    <script>
+        const urls = {
+            "[0,0,0]": "imagenes.html",
+            "[0,0,1]": "noticias.html",
+            "[0,1,0]": "informacion.html",
+        }
+
+        function goToLink(element) {
+            const result = JSON.parse(element.dataset.value); // convertimos el valor a Array para emular el comportamiento descrito
+            window.location.href = urls[JSON.stringify(result)];
+        };
+    </script>
+    <ul class="nav nav-tabs ">
+        <li class="nav-item">
+          <a class="nav-link active" data-value="[0,0,0]" onclick="goToLink(this)" >Imagenes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-value="[0,0,1]" onclick="goToLink(this)">Noticias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-value="[0,1,0]" onclick="goToLink(this)">Info</a>
+        </li>
+    </ul>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <center>
+        <footer>
+            <div class="conteninfo">
+                <h1>Argandana Inc.</h1>
+                <p>Página diseñada por Argandana Inc. | Todos los derechos reservados</p>
+                
+            </div>
+        </footer>
+    </center>
+</body>
+
+</html>

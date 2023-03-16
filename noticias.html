@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloIndex.css">
+    <link rel="shortcut icon" href="undraw_male_avatar_323b.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">  Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="registro.html">Registrar (form)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="listar.php">Contactos</a>
+                </li>
+            </div>
+          </nav>
+    </header>
+
+    <script>
+        const urls = {
+            "[0,0,0]": "imagenes.html",
+            "[0,0,1]": "noticias.html",
+            "[0,1,0]": "informacion.html",
+        }
+
+        function goToLink(element) {
+            const result = JSON.parse(element.dataset.value); // convertimos el valor a Array para emular el comportamiento descrito
+            window.location.href = urls[JSON.stringify(result)];
+        };
+    </script>
+    <ul class="nav nav-tabs ">
+        <li class="nav-item">
+          <a class="nav-link" data-value="[0,0,0]" onclick="goToLink(this)" >Imagenes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  active" data-value="[0,0,1]" onclick="goToLink(this)">Noticias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-value="[0,1,0]" onclick="goToLink(this)">Info</a>
+        </li>
+    </ul>
+    <center>
+        <h1>Sandor Martín cae con polémica arbitral ante Teófimo López en la pelea por el título del peso superligero</h1>
+        <p>El español Sandor Martín dio la cara en el Madison Square Garden contra el boxeador estadounidense</p>
+        <br><br>
+        <img src="https://phantom-elmundo.unidadeditorial.es/d803a7d088f6ff902f468b08e4d07510/crop/0x85/3000x2085/resize/473/f/webp/assets/multimedia/imagenes/2022/12/11/16707498130649.jpg" alt="Girl in a jacket" width="900" height="600">
+        <br>El estadounidense Teófimo López venció este domingo por decisión dividida al español Sandor Martín en el Madison Square Garden de Nueva York (Estados Unidos) en una eliminatoria directa del Consejo Mundial de Boxeo (WBC) por el título del peso superligero.<br>
+        <p>No solo no le quedó grande el escenario al español sino que bailó con el estadounidense en el Madison. Martín sacó su mejor boxeo, apagó a un Teófimo sin respuestas y solo una polémica decisión arbitral dejó al español sin la victoria.</p>
+        <p>Sandor Martín frenó la efervescencia de su rival, conectó con más efectividad y destapó las debilidades de un Teófimo López que alzó la mano al cielo de Nueva York ante los silbidos de su propio público. El golpe más duro que recibió el español fue el de las cartulinas.</p>
+        <p>El español supo hacer su pelea. Hizo sentir incómodo a Teófimo picando, buscando al contragolpe y evitando el poder del estadounidense. Haciendo gala de una gran movilidad y un buen uso de la distancia mojó la pólvora de López. No le quiso dejar combinar manos y, colocando con velocidad su derecha, fue sumando puntos y dificultando el trabajo del rival.</p>
+        <p>López tenía que arriesgar para entrar en distancia, él lo sabía, tenía que exponerse y lo pagó en el segundo asalto. Sandor conectó un contundente croché de derecha que hizo caer al estadounidense y forzó la cuenta del árbitro. Teófimo siguió insistiendo, colocó pocas manos pero con poder, aunque seguía sin encontrar la fórmula para sacar toda la artillería. Se ahogó en la propuesta del español.</p>
+        <p>Un cabezazo fortuito provocó una hemorragia nasal a Sandor, que fue contenida sin complicaciones y no cortó el ritmo. Esa fue la mayor dificultad con la que se enfrentó el español. En el séptimo asalto volvió a caer López en una acción calcada al del segundo. Teófimo se repuso rápido y el árbitro lo interpretó como un resbalón, una auténtica losa de cara a las cartulinas para Sandor.</p>
+        <p>Florecían los nervios en la esquina de 'The Takeover'. No es que no estuviese encontrando su mejor boxeo, es que no le estaba dejando sacarlo a relucir. No podía poner en aprietos al español. Hizo gala de unos grandes desplazamientos laterales y obligó a perseguir sombras a Teófimo. López sacaba más manos pero no con mayor precisión que el español.</p>
+        <p>Quiso apretar el acelerador el estadounidense, hasta él tenía la sensación de que se le escapaba la pelea, su padre insistía desde la esquina y así se lo recalcó antes del último episodio. Pese a precipitar las acciones, siguió sin encontrar a un Sandor Martín que encontró en las cartulinas su mayor rival.</p>
+        <p>95-94, 96-93 y 97-92 dictaminaron los jueces para dar la victoria por decisión dividida a Téofimo López ante el asombro y los silbidos del Madison Square Garden. "Ha sido una pelea muy dura", afirmaba López. Sandor Martín, visiblemente enojado y tras enfrentarse verbalmente al estadounidense, no quiso hacer declaraciones.</p>
+        <footer>
+            <div class="conteninfo">
+                <h1>Argandana Inc.</h1>
+                <p>Página diseñada por Argandana Inc. | Todos los derechos reservados</p>
+                
+            </div>
+        </footer>    
+    </center>
+</body>
+
+</html>
